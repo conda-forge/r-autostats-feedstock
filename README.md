@@ -1,13 +1,15 @@
-About r-autostats
-=================
-
-Home: https://harrison4192.github.io/autostats/, https://github.com/Harrison4192/autostats
-
-Package license: MIT
+About r-autostats-feedstock
+===========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-autostats-feedstock/blob/main/LICENSE.txt)
 
+Home: https://harrison4192.github.io/autostats/
+
+Package license: MIT
+
 Summary: Automatically do statistical exploration. Create formulas using 'tidyselect' syntax, and then determine cross-validated model accuracy and variable contributions using 'glm' and 'xgboost'. Contains additional helper functions to create and modify formulas. Has a flagship function to quickly determine relationships between categorical and continuous variables in the data set.
+
+Development: https://github.com/Harrison4192/autostats
 
 Current build status
 ====================
