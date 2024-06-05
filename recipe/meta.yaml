@@ -26,24 +26,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-foci
-    - r-xicor
-    - r-agtboost
+    - r-ckmeans.1d.dp
     - r-broom
+    - r-broom.mixed
     - r-data.table
     - r-dials
-    - r-doparallel
     - r-dplyr
-    - r-flextable
-    - r-forcats
     - r-framecleaner
     - r-ggeasy
     - r-ggplot2
     - r-ggthemes
     - r-gtools
+    - r-igraph
     - r-janitor
     - r-jtools
-    - r-lubridate
     - r-magrittr
     - r-nnet
     - r-parsnip
@@ -51,7 +47,6 @@ requirements:
     - r-patchwork
     - r-presenter
     - r-purrr
-    - r-readr
     - r-recipes
     - r-recosystem
     - r-rlang
@@ -67,24 +62,20 @@ requirements:
     - r-yardstick
   run:
     - r-base
-    - r-foci
-    - r-xicor
-    - r-agtboost
+    - r-ckmeans.1d.dp
     - r-broom
+    - r-broom.mixed
     - r-data.table
     - r-dials
-    - r-doparallel
     - r-dplyr
-    - r-flextable
-    - r-forcats
     - r-framecleaner
     - r-ggeasy
     - r-ggplot2
     - r-ggthemes
     - r-gtools
+    - r-igraph
     - r-janitor
     - r-jtools
-    - r-lubridate
     - r-magrittr
     - r-nnet
     - r-parsnip
@@ -92,7 +83,6 @@ requirements:
     - r-patchwork
     - r-presenter
     - r-purrr
-    - r-readr
     - r-recipes
     - r-recosystem
     - r-rlang
