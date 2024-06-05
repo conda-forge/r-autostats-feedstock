@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/autostats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/autostats/autostats_{{ version }}.tar.gz
-  sha256: 661ac5e001bc3a1ae48ca11351865be61241cf634d600ef278088c3d95d8ce77
+  sha256: b62e3f8db3a8d907443e73076cf7959a078aa406734a4da3769fd25556a80389
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,24 +26,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-foci
-    - r-xicor
-    - r-agtboost
+    - r-ckmeans.1d.dp
     - r-broom
+    - r-broom.mixed
     - r-data.table
     - r-dials
-    - r-doparallel
     - r-dplyr
-    - r-flextable
-    - r-forcats
     - r-framecleaner
     - r-ggeasy
     - r-ggplot2
     - r-ggthemes
     - r-gtools
+    - r-igraph
     - r-janitor
     - r-jtools
-    - r-lubridate
     - r-magrittr
     - r-nnet
     - r-parsnip
@@ -51,7 +47,6 @@ requirements:
     - r-patchwork
     - r-presenter
     - r-purrr
-    - r-readr
     - r-recipes
     - r-recosystem
     - r-rlang
@@ -67,24 +62,20 @@ requirements:
     - r-yardstick
   run:
     - r-base
-    - r-foci
-    - r-xicor
-    - r-agtboost
+    - r-ckmeans.1d.dp
     - r-broom
+    - r-broom.mixed
     - r-data.table
     - r-dials
-    - r-doparallel
     - r-dplyr
-    - r-flextable
-    - r-forcats
     - r-framecleaner
     - r-ggeasy
     - r-ggplot2
     - r-ggthemes
     - r-gtools
+    - r-igraph
     - r-janitor
     - r-jtools
-    - r-lubridate
     - r-magrittr
     - r-nnet
     - r-parsnip
@@ -92,7 +83,6 @@ requirements:
     - r-patchwork
     - r-presenter
     - r-purrr
-    - r-readr
     - r-recipes
     - r-recosystem
     - r-rlang
