@@ -1,6 +1,5 @@
 {% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-autostats
@@ -13,8 +12,7 @@ source:
   sha256: b62e3f8db3a8d907443e73076cf7959a078aa406734a4da3769fd25556a80389
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
