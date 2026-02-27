@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/autostats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/autostats/autostats_{{ version }}.tar.gz
-  sha256: b62e3f8db3a8d907443e73076cf7959a078aa406734a4da3769fd25556a80389
+  sha256: 93b39b700954c7994eab1d39ce7d560199a36ee0d979368ac93c73f9068c0cd2
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -104,8 +104,8 @@ about:
   home: https://harrison4192.github.io/autostats/
   dev_url: https://github.com/Harrison4192/autostats
   license: MIT
-  summary: Automatically do statistical exploration. Create formulas using 'tidyselect' syntax, and then determine cross-validated model accuracy and variable contributions using 'glm' and 'xgboost'. Contains additional helper functions to create and modify formulas. Has a flagship function to quickly determine relationships
-    between categorical and continuous variables in the data set.
+  summary: Automatically do statistical exploration. Create formulas using 'tidyselect' syntax, and then determine cross-validated model accuracy and variable contributions using 'glm' and 'xgboost'. Contains additional helper functions to create and modify formulas. Has a flagship function to quickly determine 
+    relationships between categorical and continuous variables in the data set.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
